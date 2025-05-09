@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+        <legend> Informações pessoais</legend>
+        Nome:<br>
+        <input type="text" name="nome" required autofocus maxlength="5"><br>
+        Senha:<br>
+        <input type="password" name="senha"><br>
+        Email:<br>
+        <input type="email" name="email" autocapitalize="on" placeholder="seuemail@gmail.com" required><br><br>
+        Imagem:<br>
+        <input type="file" name="imagem">
+        <br>
+        Data:<br>
+        <input type="date" name="data" min="2000-12-31" max="2015-12-31">
+        <br>
+        Hora:<br>
+        <input type="time" name="hora">
+        <br>
+        Mês e ano:<br>
+        <input type="month" name="mes-ano">
+        <br>
+        Semana:<br>
+        <input type="week" name="semana">
+        <br>
+        Data e Hora:<br>
+        <input type="datetime" name="data-e-hora">
+        <br>
+        URL:<br>
+        <input type="url" name="site">
+        <br>
+        Search:<br>
+        <input type="search" name="pesquisa">
+        <br>
+        Telefone:<br>
+        <input type="tel" name="Telefone">
+        <br><br>
+        Equipa:<br>
+        <input type="radio" name="time" value="vasco" checked>Vasco<br>
+        <input type="radio" name="time" value="botafogo">Botafogo<br>
+        <input type="radio" name="time" value="fluminense">Fluminense<br>
+        <input type="radio" name="time" value="flamengo" >Flamengo<br>
+        <br>
+        Cores:<br>
+        <input type="checkbox" name="Cores" value="verde">Verde<br>
+        <input type="checkbox" name="Cores" value="Azul" checked>Azul<br>
+        <input type="checkbox" name="Cores" value="Preto">Preto<br>
+        Quantidade:<br>
+        <input type="number" name="Quantidade"min="0" max="500" step="10">
+        <br>
+        <input type="range" name="Quantidade">
+        cor:<br>
+        <input type="color" name="cor">
+        <br>
+        <input type="submit" name="Btn-enviar" value="Enviar">
+    </fieldset>
+    </form>
+</body>
+</html>
